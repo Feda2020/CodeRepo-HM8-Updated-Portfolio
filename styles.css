@@ -280,6 +280,9 @@ img{
     position: relative;
     overflow: hidden;
 }
+.portfolio__par{
+    text-align: center;
+}
 .portfolio__img img{
     border-radius: .5rem;
 }
@@ -304,7 +307,7 @@ img{
     color: var(--dark-color);
 }
 
-/*  CONTACT */
+/*  Contact */
 .contact__container{
     row-gap: 2rem;
 }
