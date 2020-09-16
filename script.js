@@ -1,4 +1,4 @@
-// MENU SHOW // 
+// Show menu // 
 var showMenu = (toggleId, navId) =>{
     var toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -11,7 +11,7 @@ var showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-//  REMOVE MENU MOBILE// 
+//  Mobile menu // 
 var navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -19,8 +19,7 @@ function linkAction(){
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
-// SCROLL SECTIONS ACTIVE LINK // 
+ 
 var sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
@@ -41,7 +40,7 @@ function scrollActive(){
     })
 }
 
-//  SCROLL REVEAL ANIMATION // 
+// The scroll animation // 
 var sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
@@ -49,27 +48,27 @@ var sr = ScrollReveal({
     reset: true
 })
 
-// SCROLL HOME// 
+// The home section // 
 sr.reveal('.home__title', {})
 sr.reveal('.home__scroll', {delay: 200})
 sr.reveal('.home__img', {origin:'right', delay: 400})
 
-// SCROLL ABOUT// 
+// About section // 
 sr.reveal('.about__img', {delay: 500})
 sr.reveal('.about__subtitle', {delay: 300})
 sr.reveal('.about__profession', {delay: 400})
 sr.reveal('.about__text', {delay: 500})
 sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
-// SCROLL SKILLS// 
+// Skills section // 
 sr.reveal('.skills__subtitle', {})
 sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
 sr.reveal('.skills__img', {delay: 400})
 
-// SCROLL PORTFOLIO// 
+// Portfolio section// 
 sr.reveal('.portfolio__img', {interval: 200})
 
-// SCROLL CONTACT// 
+// Contact section// 
 sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})

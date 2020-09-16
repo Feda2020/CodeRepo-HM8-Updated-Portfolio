@@ -43,7 +43,7 @@
 
 /* BASE */
 *,::before,::after{
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 html{
     scroll-behavior: smooth;
@@ -116,7 +116,7 @@ img{
     background-color: var(--first-color);
 }
 
-/*===== NAV =====*/
+
 .nav{
     height: var(--header-height);
     display: flex;
@@ -216,7 +216,7 @@ img{
     display: flex;
     justify-content: center;
     width: 100px;
-    height: 155px;
+    height: 160px;
     overflow: hidden;
 }
 .about__img img{
