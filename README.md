@@ -11,4 +11,4 @@ As a web developer I did lots of research to accomplish this portfolio and in th
 
 # A picture of the functional application:
 
-![Updated Portfolio](./asset/Updated Portfolio.gif)
+![Portfolio](./asset/UpdatedPortfolio.gif)
